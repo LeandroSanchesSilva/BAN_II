@@ -4,6 +4,7 @@ package Principal;
 import Barbeiro.barbeiroController;
 import Cliente.clienteController;
 import Conexao.Conexao;
+import Servico.servicoController;
 import java.util.Scanner;
 import redis.clients.jedis.Jedis;
 
@@ -31,10 +32,10 @@ public static void main(String[] args){
                             break;
                     case 2: System.out.println(""); 
                             new clienteController().createCliente(con);
-                            break;/*
+                            break;
                     case 3: System.out.println(""); 
                             new servicoController().createServico(con);
-                            break;
+                            break;/*
                     case 4: System.out.println(""); 
                             new cosmeticoController().createCosmetico(con);
                             break;
