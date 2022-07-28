@@ -16,7 +16,9 @@ Na etapa final do trabalho, o banco de dados relacional foi substituído por um 
   -- Configure a classe __Principal__ de forma que a mesma seja executada quando o projeto for rodado;
   
   -- Para a correta compilação da aplicação forma instaladas duas bibliotecas adicionais, a gson-2.9.0 e a jedis-2.5.2. As mesmas podem ser encontradas nos seguintes repositórios:
+  
   https://mvnrepository.com/artifact/com.google.code.gson/gson
+  
   https://mvnrepository.com/artifact/redis.clients/jedis
     
   ### __3. Implementação da Aplicação__
