@@ -1,6 +1,6 @@
 Software utilizado para o desnvolvimento da aplicação: Netbeans IDE 12.6;
 
-SGBD Urilizado: Postgres;
+SGBD Utilizado: Postgres;
 
 Porta utilizada 5433;
 
