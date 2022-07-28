@@ -1,6 +1,8 @@
 
 package Principal;
 
+import Barbeiro.barbeiroController;
+import Cliente.clienteController;
 import Conexao.Conexao;
 import java.util.Scanner;
 import redis.clients.jedis.Jedis;
@@ -12,9 +14,12 @@ import redis.clients.jedis.Jedis;
 
 public class Principal {
 
+    
+
 public static void main(String[] args){
-        Conexao c = new Conexao();
-        c.Connection();
+        Conexao con = new Conexao();
+        con.Connection();
+
         int op = 0;
         Jedis jedis = null;
         do{
@@ -22,12 +27,11 @@ public static void main(String[] args){
             try {
                 switch (op) {
                     case 1: System.out.println("");
-                            System.out.println(" teste realizado com sucesso!");  
-                            //new barbeiroController().createBarbeiro(con);
-                            break;/*
+                            new barbeiroController().createBarbeiro(con);
+                            break;
                     case 2: System.out.println(""); 
                             new clienteController().createCliente(con);
-                            break;
+                            break;/*
                     case 3: System.out.println(""); 
                             new servicoController().createServico(con);
                             break;
@@ -100,7 +104,7 @@ public static void main(String[] args){
                 continue;
             }
         } while(op>0 && op<2);  
-        c.Shutdown(jedis);
+        con.Shutdown(jedis);
     }
     
     private static int menu() {
