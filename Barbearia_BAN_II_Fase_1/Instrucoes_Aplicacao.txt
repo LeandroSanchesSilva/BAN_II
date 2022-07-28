@@ -1,0 +1,10 @@
+Software utilizado para o desnvolvimento da aplicação: Netbeans IDE 12.6;
+
+SGBD Urilizado: Postgres;
+
+Porta utilizada 5433;
+
+Usuário de Login do pgAdmin 4: postgres;
+Senha de Login do pgAdmin 4: postgres;
+
+
